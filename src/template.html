@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Little Form</h1>
+            <p class="subtitle">Say <em>"hello"</em> to my little form!</p>
+        </header>
+        <main>
+            <form id="form">
+                <div class="form-control">
+                    <div class="form-control-inner">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@sample.com">
+                    </div>
+                    <span class="error" id="email-error" aria-live="polite"></span>
+                </div>
+                
+                <div class="form-control">
+                    <div class="form-control-inner">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" placeholder="Australia">
+                </div><span class="error" id="country-error" aria-live="polite"></span>
+                </div>
+                
+
+                <div class="form-control">
+                    <div class="form-control-inner">
+                    <label for="postcode">Post / ZIP code</label>
+                    <input type="number" name="postcode" id="postcode" placeholder="5238"></div>
+                    <span class="error" id="postcode-error"  aria-live="polite"></span>
+                </div>
+                
+
+                <div class="form-control">
+                    <div class="form-control-inner">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <span class="error" id="password-error" aria-live="polite"></span>
+                </div>
+                
+
+                <div class="form-control">
+                    <div class="form-control-inner">
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </div><span class="error" id="confirm-password-error" aria-live="polite"></span>
+                </div>
+                
+
+                <div class="form-control">
+                    <div class="form-btns form-control-inner">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="cancel">Cancel</button>
+                </div><span class="error" id="submit-error" aria-live="polite"></span>
+                </div>
+                
+            </form>
+            <div id="submission" class="invisible">
+                <p><em>High five!</em><br>
+                Your form has been submitted.</p>
+            </div>
+        </main>
+        <footer>
+            Copyright © Rachael Cole 2022. This project is&nbsp;<a href="https://github.com/jcrachael/form-validation/">open source</a>.
+        </footer>
+    </div>
+</body>
+</html>
